@@ -1,8 +1,20 @@
 import boto3
 import os
 from dotenv import load_dotenv
+from enum import Enum
 
 load_dotenv()
+
+
+class LangType(str, Enum):
+    """
+    KOR : 한국어
+    ENG : 영어
+    """
+
+    KOR: str = 'ko'
+    ENG: str = 'en'
+
 
 # Initialize a boto3 client with the provided credentials
 client_polly = boto3.client(
@@ -31,24 +43,41 @@ This chapter holds a significant place in the Bible as it deals with crucial asp
 ssml_text = """
 <speak>
 <prosody rate="105%">
- <lang xml:lang="en-US">anyway,</lang> 창세기 5장은 아담에서 노아까지 선조들을 기록하며, 그들의 족보를 자세히 나열합니다. 이러한 기록은 인간의 초기 단계와 신성한 의도에 대한 이해를 제공합니다.
+Genesis chapter 6 begins with the story of Noah. The world was filled with wickedness, but Noah lived a different life. He found favor in the eyes of God. God instructed Noah to build a massive ark and to bring two of every animal on board.
+
+Noah obediently started building the ark, even though many mocked him. He remained steadfast in his work. When the ark was finally completed, the great flood began, and Noah, along with his family and the animals, survived safely inside the ark.
+
+After the floodwaters receded and the land dried up, God showed Noah a rainbow as a symbol of His promise. God vowed never to destroy the world by a flood again.
+
+This story emphasizes the importance of faith and obedience. Noah's unwavering obedience to God's commands showcased his faith and ultimately saved the world. It continues to offer profound lessons for us today.
 </prosody>
 
 </speak>
 """
+####################
+# 언어 설정
+####################
+lang = LangType.ENG
+
+voice_id = None
+
+if lang == LangType.KOR:
+    voice_id = 'Seoyeon'
+elif lang == LangType.ENG:
+    voice_id = 'Matthew'
 
 # Request speech synthesis
 response = client_polly.synthesize_speech(
     Text=ssml_text,
     OutputFormat='mp3',
     TextType='ssml',
-    VoiceId='Seoyeon'  # You can change the voice here
+    VoiceId=voice_id  # You can change the voice here
+    # VoiceId='Matthew'  # You can change the voice here
 )
-
 
 # Saving the audio
 if "AudioStream" in response:
-    with open("output.mp3", "wb") as file:
+    with open(f"음성_aws_{lang.value}.mp3", "wb") as file:
         file.write(response['AudioStream'].read())
     print("Audio file saved as output.mp3")
 else:
