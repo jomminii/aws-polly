@@ -21,6 +21,11 @@
 
 # 속도 조절
 - rate 에 속도 명시
+```
+x-slow, slow, medium, fast,x-fast. Sets the pitch to a predefined value for the selected voice.
+
+n%: A non-negative percentage change in the speaking rate. For example, a value of 100% means no change in speaking rate, a value of 200% means a speaking rate twice the default rate, and a value of 50% means a speaking rate of half the default rate. This value has a range of 20-200%.
+```
 
 ```python
 
