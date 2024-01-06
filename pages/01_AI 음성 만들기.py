@@ -1,61 +1,10 @@
 import streamlit as st
 
+from helper.ai_voice_helper import AIVoiceHelper
+from helper.voices_dictionary import voices_dict
+voice_dict = voices_dict.copy()
 
-
-############
-language_data_list_dict = [
-    {
-        "language": "English (US)",
-        "language_code": "en-US",
-    },
-    {
-        "language": "Korean",
-        "language_code": "ko-KR",
-    }
-]
-
-voice_dict = {
-    "en-US": [
-        {
-            "이름": "Matthew",
-            "성별": "Male",
-            "특징": "news style",
-        },
-        {
-            "이름": "Danielle",
-            "성별": "Female",
-            "특징": "only NTTS",
-        }
-    ],
-    "ko-KR": [
-        {
-            "이름": "Seoyeon",
-            "성별": "Female",
-            "특징": "normal",
-        },
-    ]
-}
-
-# # Your list of dictionaries
-# a = [
-#     {"id": 1, "name": "apple"},
-#     {"id": 2, "name": "banana"}
-# ]
-#
-# # Extracting names for the selectbox
-# names = [item['name'] for item in a]
-#
-# # Creating the selectbox
-# selected_name = st.selectbox("Select a fruit", names)
-#
-# # Finding the corresponding id
-# selected_id = next(item['id'] for item in a if item['name'] == selected_name)
-#
-# # You can use selected_id in your business logic
-# st.write("Selected Fruit ID:", selected_id)
-
-
-############
+language_list = voice_dict.keys()
 
 
 st.set_page_config(
@@ -74,24 +23,49 @@ st.markdown(
     """
 )
 
-language_list = [item['language'] for item in language_data_list_dict]
-
 selected_language = st.selectbox("언어 선택", language_list)
-selected_language_code = next(item['language_code'] for item in language_data_list_dict if item['language'] == selected_language)
 
-st.write(selected_language_code)
+st.write(selected_language)
 
-persona_name_list = [item['이름'] for item in voice_dict[selected_language_code]]
-if selected_language_code:
-    selected_persona = st.selectbox("목소리 선택", persona_name_list)
-    selected_voice = next(item['이름'] for item in voice_dict[selected_language_code] if item['이름'] == selected_persona)
-
-    st.write(selected_voice)
+selected_engine = st.selectbox("엔진 선택", voice_dict[selected_language].keys())
 
 
+persona_name_list = [item['이름'] for item in voice_dict[selected_language][selected_engine]]
+selected_persona = st.selectbox("목소리 선택", persona_name_list)
+
+st.write(selected_persona)
+
+speed_rate = st.slider("속도 선택", 20, 200, 100)
+
+text = st.text_area(
+    label="내용 입력",
+    help='음성으로 변환할 내용을 입력해주세요.',
+    on_change=print("!!"),
+    placeholder='음성으로 변환할 내용을 입력해주세요.',
+)
+
+create = st.button(
+    label="음성 만들기",
+)
+
+if create:
+    if selected_persona and text:
+        audio_stream = AIVoiceHelper().synthesize_voice(
+            text=text,
+            # language_code=selected_language_code,
+            voice_id=selected_persona,
+            rate=speed_rate
+        )
+
+        if audio_stream:
+            st.download_button(
+                label="Download MP3",
+                data=audio_stream,
+                file_name="ai_voice.mp3",
+                mime="audio/mpeg"
+            )
+    else:
+        st.warning("내용을 입력해주세요.")
+        print("no")
 
 
-st.slider("속도 선택", 20, 200, 100)
-st.button("음성 만들기")
-
-st.download_button("음성 다운로드", "음성파일")
