@@ -51,3 +51,7 @@ response = client_polly.synthesize_speech(
 
 
 ```
+
+# 참고 사이트
+- [AWS Cloudwatch get-metric-statistics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-statistics.html)
+- [Integrating CloudWatch with Amazon Polly](https://docs.aws.amazon.com/polly/latest/dg/cloud-watch.html)

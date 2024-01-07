@@ -1,5 +1,7 @@
 import streamlit as st
 
+from datetime import date
+
 from helper.ai_voice_helper import AIVoiceHelper
 from helper.voices_dictionary import voices_dict
 voice_dict = voices_dict.copy()
@@ -96,6 +98,19 @@ if create:
         st.warning("내용을 입력해주세요.")
         print("no")
 
+
+# 날짜 범위 입력 위젯을 추가합니다.
+start_date = st.date_input("시작 날짜 선택", min_value=date(2023, 1, 1))
+end_date = st.date_input("종료 날짜 선택", max_value=date(2024, 12, 31))
+
+print(start_date, end_date)
+
+# 시작 날짜가 종료 날짜보다 클 경우 경고를 표시합니다.
+if start_date > end_date:
+    st.warning("시작 날짜는 종료 날짜보다 클 수 없습니다. 다시 선택하세요.")
+else:
+    # 선택된 날짜 범위를 출력합니다.
+    st.write("선택한 날짜 범위:", start_date, "부터", end_date)
 
 get_stat = st.button("test")
 if get_stat:
