@@ -87,8 +87,8 @@ class AIVoiceHelper:
             request_character_sum += i['Sum']
 
             chart_data_list.append({
-                "date": formatted_date,
-                "count": i['Sum'],
+                "날짜": formatted_date,
+                "요청 글자 수": i['Sum'],
             })
 
         return chart_data_list, request_character_sum

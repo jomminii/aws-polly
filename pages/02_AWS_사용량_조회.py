@@ -52,7 +52,7 @@ if get_stat:
 
         # 차트 데이터를 데이터프레임으로 변환합니다.
         df = pd.DataFrame(chart_data_list)
-        st.bar_chart(df, x="date", y="count", color=["#FF0000"])
+        st.bar_chart(df, x="날짜", y="요청 글자 수", color=["#FF0000"])
 
     else:
         st.write("조회할 데이터가 없습니다.")
