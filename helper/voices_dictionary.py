@@ -3,8 +3,9 @@ voices_dict = {
         "standard": [
             {
                 "이름": "Zeina",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Zeina / 여성"
             }
         ]
     },
@@ -12,13 +13,15 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Hala",
-                "gender": "Female",
-                "point": "Bilingual"
+                "gender": "여성",
+                "point": "Bilingual",
+                "select_data": "Hala / 여성 / Bilingual"
             },
             {
                 "이름": "Zayd",
-                "gender": "Male",
-                "point": "Bilingual"
+                "gender": "남성",
+                "point": "Bilingual",
+                "select_data": "Zayd / 남성 / Bilingual"
             }
         ]
     },
@@ -26,8 +29,9 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Lisa",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Lisa / 여성"
             }
         ]
     },
@@ -35,8 +39,9 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Arlet",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Arlet / 여성"
             }
         ]
     },
@@ -44,8 +49,9 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Hiujin",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Hiujin / 여성"
             }
         ]
     },
@@ -53,15 +59,17 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Zhiyu",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Zhiyu / 여성"
             }
         ],
         "standard": [
             {
                 "이름": "Zhiyu",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Zhiyu / 여성"
             }
         ]
     },
@@ -69,20 +77,23 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Sofie",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Sofie / 여성"
             }
         ],
         "standard": [
             {
                 "이름": "Naja",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Naja / 여성"
             },
             {
                 "이름": "Mads",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Mads / 남성"
             }
         ]
     },
@@ -90,20 +101,23 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Laura",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Laura / 여성"
             }
         ],
         "standard": [
             {
                 "이름": "Lotte",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Lotte / 여성"
             },
             {
                 "이름": "Ruben",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Ruben / 남성"
             }
         ]
     },
@@ -111,20 +125,23 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Olivia",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Olivia / 여성"
             }
         ],
         "standard": [
             {
                 "이름": "Nicole",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Nicole / 여성"
             },
             {
                 "이름": "Russell",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Russell / 남성"
             }
         ]
     },
@@ -132,40 +149,47 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Amy",
-                "gender": "Female",
-                "point": "Bilingual"
+                "gender": "여성",
+                "point": "Bilingual",
+                "select_data": "Amy / 여성 / Bilingual"
             },
             {
                 "이름": "Emma",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Emma / 여성"
             },
             {
                 "이름": "Brian",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Brian / 남성"
             },
             {
                 "이름": "Arthur",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Arthur / 남성"
             }
         ],
         "standard": [
             {
                 "이름": "Amy",
-                "gender": "Female",
-                "point": "Bilingual"
+                "gender": "여성",
+                "point": "Bilingual",
+                "select_data": "Amy / 여성 / Bilingual"
             },
             {
                 "이름": "Emma",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Emma / 여성"
             },
             {
                 "이름": "Brian",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Brian / 남성"
             }
         ]
     },
@@ -173,20 +197,23 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Kajal",
-                "gender": "Female",
-                "point": "Bilingual"
+                "gender": "여성",
+                "point": "Bilingual",
+                "select_data": "Kajal / 여성 / Bilingual"
             }
         ],
         "standard": [
             {
                 "이름": "Aditi",
-                "gender": "Female",
-                "point": "Bilingual"
+                "gender": "여성",
+                "point": "Bilingual",
+                "select_data": "Aditi / 여성 / Bilingual"
             },
             {
                 "이름": "Raveena",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Raveena / 여성"
             }
         ]
     },
@@ -194,8 +221,9 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Niamh",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Niamh / 여성"
             }
         ]
     },
@@ -203,8 +231,9 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Aria",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Aria / 여성"
             }
         ]
     },
@@ -212,8 +241,9 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Ayanda",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Ayanda / 여성"
             }
         ]
     },
@@ -221,105 +251,125 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Danielle",
-                "gender": "Female",
-                "point": "Bilingual"
+                "gender": "여성",
+                "point": "Bilingual",
+                "select_data": "Danielle / 여성 / Bilingual"
             },
             {
                 "이름": "Gregory",
-                "gender": "Male",
-                "point": "Bilingual"
+                "gender": "남성",
+                "point": "Bilingual",
+                "select_data": "Gregory / 남성 / Bilingual"
             },
             {
                 "이름": "Ivy",
-                "gender": "Female\u00a0(child)",
+                "gender": "여성(child)",
                 "point": None,
+                "select_data": "Ivy / 여성(child)"
             },
             {
                 "이름": "Joanna",
-                "gender": "Female",
-                "point": "Bilingual"
+                "gender": "여성",
+                "point": "Bilingual",
+                "select_data": "Joanna / 여성 / Bilingual"
             },
             {
                 "이름": "Kendra",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Kendra / 여성"
             },
             {
                 "이름": "Kimberly",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Kimberly / 여성"
             },
             {
                 "이름": "Salli",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Salli / 여성"
             },
             {
                 "이름": "Joey",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Joey / 남성"
             },
             {
                 "이름": "Justin",
-                "gender": "Male (child)",
+                "gender": "남성 (child)",
                 "point": None,
+                "select_data": "Justin / 남성 (child)"
             },
             {
                 "이름": "Kevin",
-                "gender": "Male (child)",
+                "gender": "남성 (child)",
                 "point": None,
+                "select_data": "Kevin / 남성 (child)"
             },
             {
                 "이름": "Matthew",
-                "gender": "Male",
-                "point": "Bilingual"
+                "gender": "남성",
+                "point": "Bilingual",
+                "select_data": "Matthew / 남성 / Bilingual"
             },
             {
                 "이름": "Ruth",
-                "gender": "Female",
-                "point": "Bilingual"
+                "gender": "여성",
+                "point": "Bilingual",
+                "select_data": "Ruth / 여성 / Bilingual"
             },
             {
                 "이름": "Stephen",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Stephen / 남성"
             }
         ],
         "standard": [
             {
                 "이름": "Ivy",
-                "gender": "Female\u00a0(child)",
+                "gender": "여성(child)",
                 "point": None,
+                "select_data": "Ivy / 여성(child)"
             },
             {
                 "이름": "Joanna",
-                "gender": "Female",
-                "point": "Bilingual"
+                "gender": "여성",
+                "point": "Bilingual",
+                "select_data": "Joanna / 여성 / Bilingual"
             },
             {
                 "이름": "Kendra",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Kendra / 여성"
             },
             {
                 "이름": "Kimberly",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Kimberly / 여성"
             },
             {
                 "이름": "Salli",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Salli / 여성"
             },
             {
                 "이름": "Joey",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Joey / 남성"
             },
             {
                 "이름": "Kevin",
-                "gender": "Male (child)",
+                "gender": "남성 (child)",
                 "point": None,
+                "select_data": "Kevin / 남성 (child)"
             }
         ]
     },
@@ -327,8 +377,9 @@ voices_dict = {
         "standard": [
             {
                 "이름": "Geraint",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Geraint / 남성"
             }
         ]
     },
@@ -336,39 +387,45 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Suvi",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Suvi / 여성"
             }
         ]
     },
     "French/fr-FR": {
         "neural": [
             {
-                "이름": "L\u00e9a",
-                "gender": "Female",
+                "이름": "Lea",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Lea / 여성"
             },
             {
-                "이름": "R\u00e9mi",
-                "gender": "Male",
+                "이름": "Remi",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Remi / 남성"
             }
         ],
         "standard": [
             {
-                "이름": "C\u00e9line/Celine",
-                "gender": "Female",
+                "이름": "Celine",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Celine / 여성"
             },
             {
-                "이름": "L\u00e9a",
-                "gender": "Female",
+                "이름": "Lea",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Lea / 여성"
             },
             {
                 "이름": "Mathieu",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Mathieu / 남성"
             }
         ]
     },
@@ -376,8 +433,9 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Isabelle",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Isabelle / 여성"
             }
         ]
     },
@@ -385,20 +443,23 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Gabrielle",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Gabrielle / 여성"
             },
             {
                 "이름": "Liam",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Liam / 남성"
             }
         ],
         "standard": [
             {
                 "이름": "Chantal",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Chantal / 여성"
             }
         ]
     },
@@ -406,30 +467,35 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Vicki",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Vicki / 여성"
             },
             {
                 "이름": "Daniel",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Daniel / 남성"
             }
         ],
         "standard": [
             {
                 "이름": "Marlene",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Marlene / 여성"
             },
             {
                 "이름": "Vicki",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Vicki / 여성"
             },
             {
                 "이름": "Hans",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Hans / 남성"
             }
         ]
     },
@@ -437,8 +503,9 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Hannah",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Hannah / 여성"
             }
         ]
     },
@@ -446,29 +513,33 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Kajal",
-                "gender": "Female",
-                "point": "Bilingual"
+                "gender": "여성",
+                "point": "Bilingual",
+                "select_data": "Kajal / 여성 / Bilingual"
             }
         ],
         "standard": [
             {
                 "이름": "Aditi",
-                "gender": "Female",
-                "point": "Bilingual"
+                "gender": "여성",
+                "point": "Bilingual",
+                "select_data": "Aditi / 여성 / Bilingual"
             }
         ]
     },
     "Icelandic/is-IS": {
         "standard": [
             {
-                "이름": "D\u00f3ra/Dora",
-                "gender": "Female",
+                "이름": "Dóra/Dora",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Dóra/Dora / 여성"
             },
             {
                 "이름": "Karl",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Karl / 남성"
             }
         ]
     },
@@ -476,30 +547,35 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Bianca",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Bianca / 여성"
             },
             {
                 "이름": "Adriano",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Adriano / 남성"
             }
         ],
         "standard": [
             {
                 "이름": "Carla",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Carla / 여성"
             },
             {
                 "이름": "Bianca",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Bianca / 여성"
             },
             {
                 "이름": "Giorgio",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Giorgio / 남성"
             }
         ]
     },
@@ -507,30 +583,35 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Takumi",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Takumi / 남성"
             },
             {
                 "이름": "Kazuha",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Kazuha / 여성"
             },
             {
                 "이름": "Tomoko",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Tomoko / 여성"
             }
         ],
         "standard": [
             {
                 "이름": "Mizuki",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Mizuki / 여성"
             },
             {
                 "이름": "Takumi",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Takumi / 남성"
             }
         ]
     },
@@ -538,15 +619,17 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Seoyeon",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Seoyeon / 여성"
             }
         ],
         "standard": [
             {
                 "이름": "Seoyeon",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Seoyeon / 여성"
             }
         ]
     },
@@ -554,15 +637,17 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Ida",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Ida / 여성"
             }
         ],
         "standard": [
             {
                 "이름": "Liv",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Liv / 여성"
             }
         ]
     },
@@ -570,30 +655,35 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Ola",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Ola / 여성"
             }
         ],
         "standard": [
             {
                 "이름": "Ewa",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Ewa / 여성"
             },
             {
                 "이름": "Maja",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Maja / 여성"
             },
             {
                 "이름": "Jacek",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Jacek / 남성"
             },
             {
                 "이름": "Jan",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Jan / 남성"
             }
         ]
     },
@@ -601,56 +691,65 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Camila",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Camila / 여성"
             },
             {
-                "이름": "Vit\u00f3ria/Vitoria",
-                "gender": "Female",
+                "이름": "Vitoria",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Vitoria / 여성"
             },
             {
                 "이름": "Thiago",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Thiago / 남성"
             }
         ],
         "standard": [
             {
                 "이름": "Camila",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Camila / 여성"
             },
             {
-                "이름": "Vit\u00f3ria/Vitoria",
-                "gender": "Female",
+                "이름": "Vitoria",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Vitoria / 여성"
             },
             {
                 "이름": "Ricardo",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Ricardo / 남성"
             }
         ]
     },
     "Portuguese (European)/pt-PT": {
         "neural": [
             {
-                "이름": "In\u00eas/Ines",
-                "gender": "Female",
+                "이름": "Ines",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Ines / 여성"
             }
         ],
         "standard": [
             {
-                "이름": "In\u00eas/Ines",
-                "gender": "Female",
+                "이름": "Ines",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Ines / 여성"
             },
             {
                 "이름": "Cristiano",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Cristiano / 남성"
             }
         ]
     },
@@ -658,8 +757,9 @@ voices_dict = {
         "standard": [
             {
                 "이름": "Carmen",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Carmen / 여성"
             }
         ]
     },
@@ -667,13 +767,15 @@ voices_dict = {
         "standard": [
             {
                 "이름": "Tatyana",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Tatyana / 여성"
             },
             {
                 "이름": "Maxim",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Maxim / 남성"
             }
         ]
     },
@@ -681,30 +783,35 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Lucia",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Lucia / 여성"
             },
             {
                 "이름": "Sergio",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Sergio / 남성"
             }
         ],
         "standard": [
             {
                 "이름": "Conchita",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Conchita / 여성"
             },
             {
                 "이름": "Lucia",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Lucia / 여성"
             },
             {
                 "이름": "Enrique",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Enrique / 남성"
             }
         ]
     },
@@ -712,20 +819,23 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Mia",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Mia / 여성"
             },
             {
-                "이름": "Andr\u00e9s",
-                "gender": "Male",
+                "이름": "Andres",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Andres / 남성"
             }
         ],
         "standard": [
             {
                 "이름": "Mia",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Mia / 여성"
             }
         ]
     },
@@ -733,30 +843,35 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Lupe",
-                "gender": "Female",
-                "point": "Bilingual"
+                "gender": "여성",
+                "point": "Bilingual",
+                "select_data": "Lupe / 여성 / Bilingual"
             },
             {
                 "이름": "Pedro",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Pedro / 남성"
             }
         ],
         "standard": [
             {
                 "이름": "Lupe",
-                "gender": "Female",
-                "point": "Bilingual"
+                "gender": "여성",
+                "point": "Bilingual",
+                "select_data": "Lupe / 여성 / Bilingual"
             },
             {
-                "이름": "Pen\u00e9lope/Penelope",
-                "gender": "Female",
+                "이름": "Penelope",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Penelope / 여성"
             },
             {
                 "이름": "Miguel",
-                "gender": "Male",
+                "gender": "남성",
                 "point": None,
+                "select_data": "Miguel / 남성"
             }
         ]
     },
@@ -764,15 +879,17 @@ voices_dict = {
         "neural": [
             {
                 "이름": "Elin",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Elin / 여성"
             }
         ],
         "standard": [
             {
                 "이름": "Astrid",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Astrid / 여성"
             }
         ]
     },
@@ -780,8 +897,9 @@ voices_dict = {
         "standard": [
             {
                 "이름": "Filiz",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Filiz / 여성"
             }
         ]
     },
@@ -789,8 +907,9 @@ voices_dict = {
         "standard": [
             {
                 "이름": "Gwyneth",
-                "gender": "Female",
+                "gender": "여성",
                 "point": None,
+                "select_data": "Gwyneth / 여성"
             }
         ]
     }
