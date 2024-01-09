@@ -31,6 +31,15 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+with st.sidebar:
+    access_key = st.text_input(
+        "Write down a AWS ACCESS KEY",
+        placeholder="AWS ACCESS KEY",
+    )
+    secret_access_key = st.text_input(
+        "Write down a AWS SECRET ACCESS KEY",
+        placeholder="AWS SECRET ACCESS KEY",
+    )
 
 selected_language = st.selectbox("언어 선택", language_list)
 
@@ -70,7 +79,11 @@ create = st.button(
 if create:
     if selected_person_name and text:
         try:
-            audio_stream = AIVoiceHelper().synthesize_voice(
+            audio_stream = AIVoiceHelper(
+                service="polly",
+                access_key=access_key,
+                secret_access_key=secret_access_key,
+            ).synthesize_voice(
                 text=text,
                 voice_id=selected_person_name,
                 rate=speed_rate,
@@ -98,23 +111,6 @@ if create:
         st.warning("내용을 입력해주세요.")
         print("no")
 
-
-# 날짜 범위 입력 위젯을 추가합니다.
-start_date = st.date_input("시작 날짜 선택", min_value=date(2023, 1, 1))
-end_date = st.date_input("종료 날짜 선택", max_value=date(2024, 12, 31))
-
-print(start_date, end_date)
-
-# 시작 날짜가 종료 날짜보다 클 경우 경고를 표시합니다.
-if start_date > end_date:
-    st.warning("시작 날짜는 종료 날짜보다 클 수 없습니다. 다시 선택하세요.")
-else:
-    # 선택된 날짜 범위를 출력합니다.
-    st.write("선택한 날짜 범위:", start_date, "부터", end_date)
-
-get_stat = st.button("test")
-if get_stat:
-    AIVoiceHelper().get_statistics()
 
 st.markdown(
     """

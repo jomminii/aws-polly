@@ -1,21 +1,22 @@
 import pytz
 import boto3
 import os
-
+from botocore.exceptions import ClientError
+import logging
 from dotenv import load_dotenv
 from datetime import datetime, timedelta
-
+logging.basicConfig(level=logging.DEBUG)
 load_dotenv()
 
 
 class AIVoiceHelper:
 
-    def __init__(self):
+    def __init__(self, service, access_key, secret_access_key):
         self.client_polly = boto3.client(
-            'polly',
-            region_name=os.environ.get('AWS_REGION_NAME'),
-            aws_access_key_id=os.environ.get('AWS_ACCESS_KEY_ID'),
-            aws_secret_access_key=os.environ.get('AWS_SECRET_ACCESS_KEY')
+            service,  # cloudwatch / polly
+            region_name='ap-northeast-2',
+            aws_access_key_id=access_key,
+            aws_secret_access_key=secret_access_key
         )
 
     def synthesize_voice(
@@ -53,10 +54,10 @@ class AIVoiceHelper:
         except Exception as e:
             raise e
 
-    @staticmethod
-    def get_statistics(start_datetime, end_datetime):
+    def get_statistics(self, start_datetime, end_datetime):
         # AWS CloudWatch 클라이언트 생성
-        client = boto3.client('cloudwatch', region_name='ap-northeast-2')
+        print("##"*100, os.environ.get('AWS_ACCESS_KEY_ID'))
+        client = self.client_polly
 
         # AWS Polly 관련 메트릭 가져오기
         response = client.get_metric_statistics(
@@ -78,7 +79,8 @@ class AIVoiceHelper:
         response['Datapoints'].sort(key=lambda x: x['Timestamp'])
 
         chart_data_list = []
-
+        print("start end", start_datetime, end_datetime)
+        print("response['Datapoints'] :" , response['Datapoints'])
         for i in response['Datapoints']:
             original_datetime = i['Timestamp']
             korea_timezone = pytz.timezone('Asia/Seoul')

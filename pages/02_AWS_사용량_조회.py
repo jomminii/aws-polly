@@ -24,6 +24,15 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+with st.sidebar:
+    access_key = st.text_input(
+        "Write down a AWS ACCESS KEY",
+        placeholder="AWS ACCESS KEY",
+    )
+    secret_access_key = st.text_input(
+        "Write down a AWS SECRET ACCESS KEY",
+        placeholder="AWS SECRET ACCESS KEY",
+    )
 
 # 날짜 범위 입력 위젯을 추가합니다.
 start_date = st.date_input("시작 날짜 선택", min_value=date(2023, 1, 1))
@@ -44,7 +53,11 @@ if get_stat:
     start_datetime = convert_date_to_utc_datetime(start_date, date_type="start")
     end_datetime = convert_date_to_utc_datetime(end_date, date_type="end")
 
-    chart_data_list, sum = AIVoiceHelper.get_statistics(start_datetime=start_datetime, end_datetime=end_datetime)
+    chart_data_list, sum = AIVoiceHelper(
+        service="cloudwatch",
+        access_key=access_key,
+        secret_access_key=secret_access_key,
+    ).get_statistics(start_datetime=start_datetime, end_datetime=end_datetime)
 
     if chart_data_list:
 

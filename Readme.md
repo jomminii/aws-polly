@@ -55,3 +55,24 @@ response = client_polly.synthesize_speech(
 # 참고 사이트
 - [AWS Cloudwatch get-metric-statistics](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/get-metric-statistics.html)
 - [Integrating CloudWatch with Amazon Polly](https://docs.aws.amazon.com/polly/latest/dg/cloud-watch.html)
+
+# pyinstaller
+- but cant excute on other computer.
+```
+/Users/leekh/Downloads/run ; exit;
+➜  ~ /Users/leekh/Downloads/run ; exit;
+[2861] Error loading Python lib '/var/folders/hr/8nys1h0d3dg4n07tkx_59vr80000gn/T/_MEIacAvwd/libpython3.11.dylib': dlopen: dlopen(/var/folders/hr/8nys1h0d3dg4n07tkx_59vr80000gn/T/_MEIacAvwd/libpython3.11.dylib, 0x000A): Symbol not found: _mkfifoat
+  Referenced from: /private/var/folders/hr/8nys1h0d3dg4n07tkx_59vr80000gn/T/_MEIacAvwd/libpython3.11.dylib
+  Expected in: /usr/lib/libSystem.B.dylib
+
+Saving session...completed.
+Deleting expired sessions...      11 completed.
+
+[프로세스 완료됨]
+
+```
+
+```
+pyinstaller run.spec --clean
+
+```
