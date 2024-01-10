@@ -70,6 +70,7 @@ text = st.text_area(
     label="내용 입력",
     help='음성으로 변환할 내용을 입력해주세요.',
     placeholder='음성으로 변환할 내용을 입력해주세요.',
+    height=500,
 )
 
 create = st.button(
