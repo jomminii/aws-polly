@@ -106,7 +106,7 @@ if create:
                 mime="audio/mpeg",
                 disabled=False if audio_stream else True,
             )
-            st.audio(audio_stream, format="audio/mp3")
+            st.audio(audio_stream, format="audio/mpeg")
 
     else:
         st.warning("내용을 입력해주세요.")
