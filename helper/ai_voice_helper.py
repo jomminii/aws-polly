@@ -56,7 +56,7 @@ class AIVoiceHelper:
 
     def get_statistics(self, start_datetime, end_datetime):
         # AWS CloudWatch 클라이언트 생성
-        print("##"*100, os.environ.get('AWS_ACCESS_KEY_ID'))
+
         client = self.client_polly
 
         # AWS Polly 관련 메트릭 가져오기
