@@ -2,6 +2,7 @@ import streamlit as st
 
 from datetime import date
 
+from component.side_bar import aws_credentials_sidebar
 from helper.ai_voice_helper import AIVoiceHelper
 from helper.voices_dictionary import voices_dict
 voice_dict = voices_dict.copy()
@@ -31,15 +32,8 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-with st.sidebar:
-    access_key = st.text_input(
-        "Write down a AWS ACCESS KEY",
-        placeholder="AWS ACCESS KEY",
-    )
-    secret_access_key = st.text_input(
-        "Write down a AWS SECRET ACCESS KEY",
-        placeholder="AWS SECRET ACCESS KEY",
-    )
+
+access_key_in_session, secret_access_key_in_session = aws_credentials_sidebar()
 
 selected_language = st.selectbox("언어 선택", language_list)
 
@@ -82,8 +76,8 @@ if create:
         try:
             audio_stream = AIVoiceHelper(
                 service="polly",
-                access_key=access_key,
-                secret_access_key=secret_access_key,
+                access_key=access_key_in_session,
+                secret_access_key=secret_access_key_in_session,
             ).synthesize_voice(
                 text=text,
                 voice_id=selected_person_name,

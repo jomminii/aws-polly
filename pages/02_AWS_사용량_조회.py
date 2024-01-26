@@ -3,6 +3,7 @@ import pandas as pd
 
 from datetime import date
 
+from component.side_bar import aws_credentials_sidebar
 from helper.ai_voice_helper import AIVoiceHelper
 from helper.common_helper import convert_date_to_utc_datetime
 
@@ -24,21 +25,11 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-with st.sidebar:
-    access_key = st.text_input(
-        "Write down a AWS ACCESS KEY",
-        placeholder="AWS ACCESS KEY",
-    )
-    secret_access_key = st.text_input(
-        "Write down a AWS SECRET ACCESS KEY",
-        placeholder="AWS SECRET ACCESS KEY",
-    )
+access_key_in_session, secret_access_key_in_session = aws_credentials_sidebar()
 
 # 날짜 범위 입력 위젯을 추가합니다.
 start_date = st.date_input("시작 날짜 선택", min_value=date(2023, 1, 1))
 end_date = st.date_input("종료 날짜 선택", max_value=date(2030, 12, 31))
-
-print(start_date, end_date)
 
 # 시작 날짜가 종료 날짜보다 클 경우 경고를 표시합니다.
 if start_date > end_date:
@@ -55,8 +46,8 @@ if get_stat:
 
     chart_data_list, sum = AIVoiceHelper(
         service="cloudwatch",
-        access_key=access_key,
-        secret_access_key=secret_access_key,
+        access_key=access_key_in_session,
+        secret_access_key=secret_access_key_in_session,
     ).get_statistics(start_datetime=start_datetime, end_datetime=end_datetime)
 
     if chart_data_list:

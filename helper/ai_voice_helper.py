@@ -79,8 +79,7 @@ class AIVoiceHelper:
         response['Datapoints'].sort(key=lambda x: x['Timestamp'])
 
         chart_data_list = []
-        print("start end", start_datetime, end_datetime)
-        print("response['Datapoints'] :" , response['Datapoints'])
+
         for i in response['Datapoints']:
             original_datetime = i['Timestamp']
             korea_timezone = pytz.timezone('Asia/Seoul')
